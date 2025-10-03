@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'dana-bold';
+  src: url('dana-fanum-bold.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'dana-bold', sans-serif;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.container section {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+.container section:nth-child(odd) {
+  background-color: #333;
+}
+
+.container section:nth-child(even) {
+  background-color: #694bd1;
+}
+
+h2 {
+  font-size: 4em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* فرم لاگین */
+.login-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-box input {
+  width: 250px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.login-box button {
+  width: 250px;
+  padding: 10px;
+  background: #ff004f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #e60046;
+}
+
+/* کارت پروفایل */
+.profile-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  text-align: center;
+  color: #fff;
+}
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #fff;
+}
+
+.profile-card h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+/* 🔹 نوار ناوبری */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff004f;
+}
